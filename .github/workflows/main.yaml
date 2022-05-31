@@ -49,6 +49,9 @@ jobs:
       - name: sync with source
         run: npx cap sync
 
+      - name: Build with Gradle
+        run: ./gradlew build
+
       - name: Generate the Android App Apk
         # working-directory: {working android directory} # eg. /home/runner/work/Bookie/Bookie/android 
         run: bash ./gradlew assembleDebug --stacktrace
