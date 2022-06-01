@@ -37,8 +37,8 @@ jobs:
       - name: build the app
         run: npm run build
 
-      # - name: remove existing folder if there 
-      #   run: rm -rf {path of your android folder dir.} # eg. /home/runner/work/Bookie/Bookie/android
+      - name: remove existing folder if there 
+        run: rm -rf /home/runner/work/photo-gallery/photo-gallery/android # eg. /home/runner/work/Bookie/Bookie/android
 
       - name: Add to android
         run: npx cap add android
@@ -47,7 +47,7 @@ jobs:
         run: npx cap sync
 
       - name: Generate the Android App Apk
-        # working-directory: {working android directory} # eg. /home/runner/work/Bookie/Bookie/android 
+        working-directory: /home/runner/work/photo-gallery/photo-gallery/android # eg. /home/runner/work/Bookie/Bookie/android 
         run: bash ./gradlew assembleDebug --stacktrace
 
       - name: Upload dev APK
