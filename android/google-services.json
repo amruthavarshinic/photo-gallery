@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "803123643381",
+    "project_id": "ionic-andoid",
+    "storage_bucket": "ionic-andoid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803123643381:android:8b69af5e589746f1cd56bc",
+        "android_client_info": {
+          "package_name": "com.getcapacitor.myapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "803123643381-qc066d66t8fegirmbkr8a7tmv5cta4ou.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.getcapacitor.myapp",
+            "certificate_hash": "3f8ec68e43a82fda1c1b6a9e11af7eec294921ea"
+          }
+        },
+        {
+          "client_id": "803123643381-npe0mobieiqkgfln1mr6lchpqlf46sif.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxj4ZTn0glJR48GV2lY5ETol84dEhaWeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "803123643381-npe0mobieiqkgfln1mr6lchpqlf46sif.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -56,9 +56,10 @@ jobs:
           name: app-dev
           path: android/app/build/outputs/apk/debug/app-debug.apk
 
-      - name: Deploy to Firebase
-        uses: docker://w9jds/firebase-action:master
+      - name: upload artifact to Firebase App Distribution
+        uses: wzieba/Firebase-Distribution-Github-Action@v1
         with:
-          args: deploy --only hosting
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          appId: ${{secrets.FIREBASE_APP_ID}}
+          token: ${{secrets.FIREBASE_TOKEN}}
+          groups: testers
+          file: android/app/build/outputs/apk/debug/app-debug.apk
