@@ -40,9 +40,6 @@ jobs:
       # - name: remove existing folder if there 
       #   run: rm -rf {path of your android folder dir.} # eg. /home/runner/work/Bookie/Bookie/android
 
-      - name: Install android
-        run: npm install @capacitor/android
-
       - name: Add to android
         run: npx cap add android
 
