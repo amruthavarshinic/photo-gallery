@@ -34,8 +34,8 @@ jobs:
       - name: Install app dependencies
         run: npm install
 
-#       - name: build the app
-#         run: npm run build
+      - name: build the app
+        run: npm run build
 
 #       - name: remove existing folder if there 
 #         run: rm -rf /home/runner/work/photo-gallery/photo-gallery/android # eg. /home/runner/work/Bookie/Bookie/android
@@ -50,8 +50,8 @@ jobs:
 #         working-directory: /home/runner/work/photo-gallery/photo-gallery/android # eg. /home/runner/work/Bookie/Bookie/android 
 #         run: bash ./gradlew assembleDebug --stacktrace
 
-        - name: Generate the Android App Apk
-          run: ionic cordova build android
+      - name: Generate the Android App Apk
+        run: ionic cordova build android
 
 #       - name: Upload dev APK
 #         uses: actions/upload-artifact@v1
